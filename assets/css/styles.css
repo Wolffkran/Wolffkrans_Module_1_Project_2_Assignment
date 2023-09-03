@@ -1,0 +1,143 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+header{
+    font-size: 22px;
+    font-family: 'Raleway';
+    font-weight: bold;  
+}
+
+body {
+    background-image: linear-gradient(to right, #1B2838 0%, #1B2838 25%, #1B2838 75%, #1c2a3b 100%);
+    background-size: 100% 800px;
+    background-position: 50% 100%;
+    background-repeat: repeat-y;
+}
+
+/* Style the "About Me" section */
+#about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway';
+    min-height: 5vh; /* Use min-height to ensure it takes at least the viewport height */
+}
+
+* {
+    color: #7A8B97;
+}
+
+/* Style the "About Me" heading */
+#about h2 {
+    font-size: 22px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    padding-top: 1%;
+}
+
+/* Style the developer's notes */
+#about p {
+    font-size: 16px;
+    font-family: 'Raleway';
+    max-width: 50%;
+    margin: 0 auto; /* Center the text horizontally */
+}
+
+/* Style the "My Work" heading */
+#work h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Raleway';
+    margin-top: 5%;
+}
+
+/* Basic styling for navigation */
+nav {
+    background-color: #171D25;
+    color: #fff;
+    padding: 10px;
+}
+
+nav h1 {
+    padding-left: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Basic styling for header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40vh; /* Use vh for relative height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style individual work items */
+.grid-container {
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+/* CSS for the contact section */
+#contact {
+    text-align: center;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    #about p {
+        max-width: 80%;
+    }
+
+    #contact ul li {
+        margin-right: 10px;
+    }
+}
